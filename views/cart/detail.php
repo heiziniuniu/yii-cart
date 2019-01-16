@@ -6,8 +6,6 @@ echo '商品名称:'. $arr['reault']['name'];
 ?>
 <div>
     <h1>详情页</h1>
-    <h2><?= Html::encode($data,true)?></h2>
-    <?= Html::json_decode("{$data}")?>
     <input id="code" value="<?=  Yii::$app->request->get('code')?>" hidden/ >
     <div class="border-wraper" >
         当前数量是：<span id="currentNum"><?= Html::encode("{$currNum}")?></span>   
